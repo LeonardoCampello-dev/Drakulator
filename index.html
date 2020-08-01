@@ -1,66 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="A calculator with style based on the dracula theme">
-        <meta name="keywords" content="Calculator, Drácula">
-        <meta name="author" content="Leonardo Campello">
-        
-        <link rel="stylesheet" href="style.css">
-        
-        <title>Drakulator</title>
-    </head>
-    <body>
-        <h1>Drakulator</h1>
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A calculator with style based on the dracula theme">
+    <meta name="keywords" content="Calculator, Drácula">
+    <meta name="author" content="Leonardo Campello">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Drakulator</title>
+</head>
+
+<body>
 
     <form name="calculator-form" action="#" method="POST">
-        
+
         <div id="calculator">
-            
+
             <div class="header">
-                Drakulator
-            </div>
-            
-            <input type="text" name="visor" id="visor">
-
-            <div class="rows">
-                <input type="button" value="C" onclick="clear()">
-                <input type="button" value="+/-">
-                <input type="button" value="%">
-                <input type="button" value="/" onclick="operation()">
+                <img src="Logo.svg" alt="Logo">
+                <h1>Drakulator</h1>
             </div>
 
+            <input type="text" name="visor" id="visor" value="👨‍🔬">
+
             <div class="rows">
-                <input type="button" value="7" onclick="button(value)">
-                <input type="button" value="8" onclick="button(value)">
-                <input type="button" value="9" onclick="button(value)">
-                <input type="button" value="*" onclick="operation(value)">
-            </div>
-            
-            <div class="rows">
-                <input type="button" value="4" onclick="button(value)">
-                <input type="button" value="5" onclick="button(value)">
-                <input type="button" value="6" onclick="button(value)">
-                <input type="button" value="-" onclick="operation(value)">
-            </div>
-            
-            <div class="rows">
-                <input type="button" value="1" onclick="button(value)">
-                <input type="button" value="2" onclick="button(value)">
-                <input type="button" value="3" onclick="button(value)">
-                <input type="button" value="+" onclick="operation(value)">
+                <input type="button" class="others" value="C" onclick="clear()">
+                <input type="button" class="others" value="+/-">
+                <input type="button" class="others" value="%">
+                <input type="button" class="operator" value="/" onclick="operation()">
             </div>
 
             <div class="rows">
-                <input type="button" value="0" onclick="button(value)">
-                <input type="button" value="." onclick="button(value)">
-                <input type="button" value="=" onclick="result(value)">
+                <input type="button" class="number" value="7" onclick="button(value)">
+                <input type="button" class="number" value="8" onclick="button(value)">
+                <input type="button" class="number" value="9" onclick="button(value)">
+                <input type="button" class="operator" value="*" onclick="operation(value)">
             </div>
-            
+
+            <div class="rows">
+                <input type="button" class="number" value="4" onclick="button(value)">
+                <input type="button" class="number" value="5" onclick="button(value)">
+                <input type="button" class="number" value="6" onclick="button(value)">
+                <input type="button" class="operator" value="-" onclick="operation(value)">
+            </div>
+
+            <div class="rows">
+                <input type="button" class="number" value="1" onclick="button(value)">
+                <input type="button" class="number" value="2" onclick="button(value)">
+                <input type="button" class="number" value="3" onclick="button(value)">
+                <input type="button" class="operator" value="+" onclick="operation(value)">
+            </div>
+
+            <div class="rows">
+                <input type="button" class="number" value="0" onclick="button(value)">
+                <input type="button" class="others" value="." onclick="button(value)">
+                <input type="button" class="others" value="=" onclick="result(value)">
+            </div>
+
         </div>
 
     </form>
+
+
+</body>
 
 </html>
