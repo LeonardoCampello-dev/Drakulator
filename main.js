@@ -4,8 +4,10 @@ const { app, BrowserWindow } = require('electron')
 
 function createWindow () {
     let win = new BrowserWindow({
-        height: 500,
+        height: 700,
         width: 400,
+        resizable: false,
+        titleBarStyle: "hidden",
         webPreferences: {
             nodeIntegration: true
         }
@@ -13,5 +15,7 @@ function createWindow () {
 
     win.loadFile("index.html")
 }
+
+    
 
 app.whenReady().then(createWindow)
