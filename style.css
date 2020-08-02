@@ -73,7 +73,7 @@ body {
 
 /* INPUT */
 
-#calculator input[name="visor"] {
+#calculator input[name="viewfinder"] {
     background-color: #efefef;
     color: var(--orange);
     font-size: 28px;

@@ -9,13 +9,14 @@
     <meta name="author" content="Leonardo Campello">
 
     <link rel="stylesheet" href="style.css">
+    <script src="calculator.js"></script>
 
     <title>Drakulator</title>
 </head>
 
 <body>
 
-    <form name="calculator-form" action="#" method="POST">
+    <form name="form" class="calculator-form" action="#" method="POST">
 
         <div id="calculator">
 
@@ -24,40 +25,40 @@
                 <h1>Drakulator</h1>
             </div>
 
-            <input type="text" name="visor" id="visor" value="👨‍🔬">
+            <input type="text" name="viewfinder" id="viewfinder">
 
             <div class="rows">
-                <input type="button" class="others" value="C" onclick="clear()">
+                <input type="button" class="others" value="C" onclick="clearScreen()">
                 <input type="button" class="others" value="+/-">
                 <input type="button" class="others" value="%">
-                <input type="button" class="operator" value="/" onclick="operation()">
+                <input type="button" class="operator" value="/" onclick="button(value)">
             </div>
 
             <div class="rows">
                 <input type="button" class="number" value="7" onclick="button(value)">
                 <input type="button" class="number" value="8" onclick="button(value)">
                 <input type="button" class="number" value="9" onclick="button(value)">
-                <input type="button" class="operator" value="*" onclick="operation(value)">
+                <input type="button" class="operator" value="*" onclick="button(value)">
             </div>
 
             <div class="rows">
                 <input type="button" class="number" value="4" onclick="button(value)">
                 <input type="button" class="number" value="5" onclick="button(value)">
                 <input type="button" class="number" value="6" onclick="button(value)">
-                <input type="button" class="operator" value="-" onclick="operation(value)">
+                <input type="button" class="operator" value="-" onclick="button(value)">
             </div>
 
             <div class="rows">
                 <input type="button" class="number" value="1" onclick="button(value)">
                 <input type="button" class="number" value="2" onclick="button(value)">
                 <input type="button" class="number" value="3" onclick="button(value)">
-                <input type="button" class="operator" value="+" onclick="operation(value)">
+                <input type="button" class="operator" value="+" onclick="button(value)">
             </div>
 
             <div class="rows">
                 <input type="button" class="number" value="0" onclick="button(value)">
                 <input type="button" class="others" value="." onclick="button(value)">
-                <input type="button" class="others" value="=" onclick="result(value)">
+                <input type="button" class="others" value="=" onclick="calculate()">
             </div>
 
         </div>
