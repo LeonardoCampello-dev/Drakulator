@@ -1,21 +1,19 @@
-const electron = require ('electron')
-
 const { app, BrowserWindow } = require('electron')
 
-function createWindow () {
+function createWindow() {
     let win = new BrowserWindow({
         height: 700,
         width: 400,
         resizable: false,
-        titleBarStyle: "hidden",
+        titleBarStyle: 'hidden',
         webPreferences: {
             nodeIntegration: true
         }
     })
 
-    win.loadFile("index.html")
+    win.loadFile('views/index.html')
 }
 
-    
+
 
 app.whenReady().then(createWindow)
