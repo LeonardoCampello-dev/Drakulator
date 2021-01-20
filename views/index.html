@@ -1,71 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A calculator with style based on the dracula theme"
+    />
+    <meta name="keywords" content="Calculator, Drácula" />
+    <meta name="author" content="Leonardo Campello" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A calculator with style based on the dracula theme">
-    <meta name="keywords" content="Calculator, Drácula">
-    <meta name="author" content="Leonardo Campello">
-
-    <link rel="stylesheet" href="../assets/styles.css">
+    <link rel="stylesheet" href="../assets/styles.css" />
 
     <title>Drakulator</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <form name="form" class="calculator-form" action="#" method="POST">
-
-        <div id="calculator">
-
-            <div class="header">
-                <img src="../assets/logo.svg" alt="Logo">
-                <h1>Drakulator</h1>
-            </div>
-
-            <input type="text" name="viewfinder" id="viewfinder">
-
-            <div class="rows">
-                <input type="button" class="others" value="C" onclick="clearScreen()">
-                <input type="button" class="others" value="+/-">
-                <input type="button" class="others" value="%">
-                <input type="button" class="operator" value="/" onclick="button(value)">
-            </div>
-
-            <div class="rows">
-                <input type="button" class="number" value="7" onclick="button(value)">
-                <input type="button" class="number" value="8" onclick="button(value)">
-                <input type="button" class="number" value="9" onclick="button(value)">
-                <input type="button" class="operator" value="*" onclick="button(value)">
-            </div>
-
-            <div class="rows">
-                <input type="button" class="number" value="4" onclick="button(value)">
-                <input type="button" class="number" value="5" onclick="button(value)">
-                <input type="button" class="number" value="6" onclick="button(value)">
-                <input type="button" class="operator" value="-" onclick="button(value)">
-            </div>
-
-            <div class="rows">
-                <input type="button" class="number" value="1" onclick="button(value)">
-                <input type="button" class="number" value="2" onclick="button(value)">
-                <input type="button" class="number" value="3" onclick="button(value)">
-                <input type="button" class="operator" value="+" onclick="button(value)">
-            </div>
-
-            <div class="rows">
-                <input type="button" class="number" value="0" onclick="button(value)">
-                <input type="button" class="others" value="." onclick="button(value)">
-                <input type="button" class="others" value="=" onclick="calculate()">
-            </div>
-
+      <div id="calculator">
+        <div class="header">
+          <img src="../assets/logo.svg" alt="Logo" />
+          <h1>Drakulator</h1>
         </div>
 
+        <input type="text" name="viewfinder" id="viewfinder" />
+
+        <div class="rows">
+          <input
+            type="button"
+            class="others"
+            value="C"
+            onclick="clearScreen()"
+          />
+          <input type="button" class="others" value="+/-" />
+          <input type="button" class="others" value="%" />
+          <input
+            type="button"
+            class="operator"
+            value="/"
+            onclick="button(value)"
+          />
+        </div>
+
+        <div class="rows">
+          <input
+            type="button"
+            class="number"
+            value="7"
+            onclick="button(value)"
+          />
+          <input
+            type="button"
+            class="number"
+            value="8"
+            onclick="button(value)"
+          />
+          <input
+            type="button"
+            class="number"
+            value="9"
+            onclick="button(value)"
+          />
+          <input
+            type="button"
+            class="operator"
+            value="*"
+            onclick="button(value)"
+          />
+        </div>
+
+        <div class="rows">
+          <input
+            type="button"
+            class="number"
+            value="4"
+            onclick="button(value)"
+          />
+          <input
+            type="button"
+            class="number"
+            value="5"
+            onclick="button(value)"
+          />
+          <input
+            type="button"
+            class="number"
+            value="6"
+            onclick="button(value)"
+          />
+          <input
+            type="button"
+            class="operator"
+            value="-"
+            onclick="button(value)"
+          />
+        </div>
+
+        <div class="rows">
+          <input
+            type="button"
+            class="number"
+            value="1"
+            onclick="button(value)"
+          />
+          <input
+            type="button"
+            class="number"
+            value="2"
+            onclick="button(value)"
+          />
+          <input
+            type="button"
+            class="number"
+            value="3"
+            onclick="button(value)"
+          />
+          <input
+            type="button"
+            class="operator"
+            value="+"
+            onclick="button(value)"
+          />
+        </div>
+
+        <div class="rows">
+          <input
+            type="button"
+            class="number"
+            value="0"
+            onclick="button(value)"
+          />
+          <input
+            type="button"
+            class="others"
+            value="."
+            onclick="button(value)"
+          />
+          <input type="button" class="others" value="=" onclick="calculate()" />
+        </div>
+      </div>
     </form>
 
     <script src="../assets/scripts/calculator.js"></script>
-
-</body>
-
+  </body>
 </html>
