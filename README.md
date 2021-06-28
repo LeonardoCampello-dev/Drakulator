@@ -1,7 +1,7 @@
 
 <h1 align="center"> 🦇 Drakulator 🧛‍♂️</h1>
 
-> Calcudora inspired by [Dracula theme](https://draculatheme.com/)
+> Calculator inspired by [Dracula theme](https://draculatheme.com/)
 
 ## 🚀 Technologies used
 
